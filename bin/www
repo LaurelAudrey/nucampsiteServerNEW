@@ -113,3 +113,12 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+module.exports = {
+  'secretKey': '12345-67890-09876-54321',
+  'mongoUrl': 'mongodb://localhost:27017/nucampsite',
+  'facebook': {
+      clientId: '720492513008710',
+      clientSecret: 'a8428d524ad36af9ff67ddb2d43601cf'
+  }
+}
