@@ -58,6 +58,7 @@ exports.facebookPassport = passport.use(
         }, 
         (accessToken, refreshToken, profile, done) => {
             User.findOne({facebookId: profile.id}, (err, user) => {
+                console.log(err)
                 if (err) {
                     return done(err, false);
                 }
